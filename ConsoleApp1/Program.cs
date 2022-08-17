@@ -58,3 +58,10 @@ Console.WriteLine(Math.Max(10, 36));
 Console.WriteLine(Math.Min(10,36));
 // 四舍五入
 Console.WriteLine(Math.Round(10.6));
+
+// 用户输入 （只用write不换行
+Console.Write("请输入名字：");
+string str = Console.ReadLine();
+Console.WriteLine("名字：{0}",str);
+
+
