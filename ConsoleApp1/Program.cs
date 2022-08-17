@@ -39,3 +39,22 @@ Console.WriteLine(name.IndexOf("ky"));
 Console.WriteLine(name.IndexOf("Sy"));
 // 字符串切割（第二个参数取几位
 Console.WriteLine(cent.Substring(1,5));
+
+// 数字
+// 浮点数（其中一个是浮点，结果就是浮点
+Console.WriteLine(5 / 2.0);
+// 综合运算
+int num = 10;
+Console.WriteLine(num * 2.0 /2.1);
+// 绝对值
+Console.WriteLine(Math.Abs(-100));
+// 次方
+Console.WriteLine(Math.Pow(2,3));
+// 开根号
+Console.WriteLine(Math.Sqrt(36));
+// 取大值
+Console.WriteLine(Math.Max(10, 36));
+// 取小值
+Console.WriteLine(Math.Min(10,36));
+// 四舍五入
+Console.WriteLine(Math.Round(10.6));
