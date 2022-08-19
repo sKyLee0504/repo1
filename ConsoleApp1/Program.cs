@@ -70,3 +70,13 @@ double num1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("请输入第一个数：");
 double num2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("求和：{0}", num1 + num2);
+
+// 数组（已知值
+int[] scores = { 50, 60, 70, 99, 100 };
+Console.WriteLine(scores[0]);
+scores[2] = 88;
+Console.WriteLine(scores[2]);
+//数组（未知值,[]里面有几个，就可以放几个值
+string[] phone = new string[5];
+phone[0] = "sss";
+Console.WriteLine(phone[0]);
