@@ -91,3 +91,29 @@ else
 {
     Console.WriteLine("爬");
 }
+
+// 进阶计算器
+Console.WriteLine("请输入第一个数：");
+double num1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("请输入要进行的运算：");
+string oper = Console.ReadLine();
+Console.WriteLine("请输入第一个数：");
+double num2 = Convert.ToDouble(Console.ReadLine());
+if (oper == "+")
+{
+    Console.Write("输出结果：{0}", num1 + num2);
+}
+else if (oper == "-")
+{
+    Console.Write("输出结果：{0}", num1 - num2);
+}
+else if (oper == "*")
+{
+    Console.Write("输出结果：{0}", num1 * num2);
+} else if (oper == "/")
+{
+    Console.Write("输出结果：{0}", num1 / num2);
+} else
+{
+    Console.Write("不合法");
+}
