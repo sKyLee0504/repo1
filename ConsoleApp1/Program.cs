@@ -60,16 +60,16 @@ Console.WriteLine(Math.Min(10,36));
 Console.WriteLine(Math.Round(10.6));
 
 // 用户输入 （只用write不换行
-Console.Write("请输入名字：");
-string str = Console.ReadLine();
-Console.WriteLine("名字：{0}",str);
+//Console.Write("请输入名字：");
+//string str = Console.ReadLine();
+//Console.WriteLine("名字：{0}",str);
 
 // 简易计算器 （ReadLine输入是string类型，要显式转换
-Console.WriteLine("请输入第一个数：");
-double num1 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("请输入第一个数：");
-double num2 = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("求和：{0}", num1 + num2);
+//Console.WriteLine("请输入第一个数：");
+//double num1 = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("请输入第一个数：");
+//double num2 = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("求和：{0}", num1 + num2);
 
 // 数组（已知值
 int[] scores = { 50, 60, 70, 99, 100 };
@@ -80,3 +80,14 @@ Console.WriteLine(scores[2]);
 string[] phone = new string[5];
 phone[0] = "sss";
 Console.WriteLine(phone[0]);
+
+// if语句
+bool hungry = false;
+if (hungry)
+{
+    Console.WriteLine("饿了就吃");
+}
+else
+{
+    Console.WriteLine("爬");
+}
