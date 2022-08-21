@@ -117,3 +117,5 @@ else if (oper == "*")
 {
     Console.Write("不合法");
 }
+
+// while循环
