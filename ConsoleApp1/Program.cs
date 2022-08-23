@@ -65,11 +65,11 @@ Console.WriteLine(Math.Round(10.6));
 //Console.WriteLine("名字：{0}",str);
 
 // 简易计算器 （ReadLine输入是string类型，要显式转换
-//Console.WriteLine("请输入第一个数：");
-//double num1 = Convert.ToDouble(Console.ReadLine());
-//Console.WriteLine("请输入第一个数：");
-//double num2 = Convert.ToDouble(Console.ReadLine());
-//Console.WriteLine("求和：{0}", num1 + num2);
+/*Console.WriteLine("请输入第一个数：");
+double num1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("请输入第一个数：");
+double num2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("求和：{0}", num1 + num2);*/
 
 // 数组（已知值
 int[] scores = { 50, 60, 70, 99, 100 };
@@ -93,30 +93,32 @@ else
 }
 
 // 进阶计算器
-//Console.WriteLine("请输入第一个数：");
-//double num1 = Convert.ToDouble(Console.ReadLine());
-//Console.WriteLine("请输入要进行的运算：");
-//string oper = Console.ReadLine();
-//Console.WriteLine("请输入第一个数：");
-//double num2 = Convert.ToDouble(Console.ReadLine());
-//if (oper == "+")
-//{
-//    Console.Write("输出结果：{0}", num1 + num2);
-//}
-//else if (oper == "-")
-//{
-//    Console.Write("输出结果：{0}", num1 - num2);
-//}
-//else if (oper == "*")
-//{
-//    Console.Write("输出结果：{0}", num1 * num2);
-//} else if (oper == "/")
-//{
-//    Console.Write("输出结果：{0}", num1 / num2);
-//} else
-//{
-//    Console.Write("不合法");
-//}
+/* Console.WriteLine("请输入第一个数：");
+double num1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("请输入要进行的运算：");
+string oper = Console.ReadLine();
+Console.WriteLine("请输入第一个数：");
+double num2 = Convert.ToDouble(Console.ReadLine());
+if (oper == "+")
+{
+    Console.Write("输出结果：{0}", num1 + num2);
+}
+else if (oper == "-")
+{
+    Console.Write("输出结果：{0}", num1 - num2);
+}
+else if (oper == "*")
+{
+    Console.Write("输出结果：{0}", num1 * num2);
+}
+else if (oper == "/")
+{
+    Console.Write("输出结果：{0}", num1 / num2);
+}
+else
+{
+    Console.Write("不合法");
+}*/
 
 // while循环
 int num1 = 1;
@@ -132,3 +134,34 @@ do
     Console.WriteLine(num2);
     num2++;
 }while (num2 <= 5);
+
+// 猜数字游戏（输入数字，直到猜中数字 限制猜测次数
+ Console.WriteLine("请输入谜底：");
+int num3 = Convert.ToInt32(Console.ReadLine());
+int guess;
+int guess_count = 0;
+int guess_limit = 3;
+bool win = false;
+do
+{   
+    Console.WriteLine("请输入猜的数字：");
+    guess = Convert.ToInt32(Console.ReadLine());
+    guess_count++;
+
+    if (guess < num3)
+    {
+        Console.WriteLine("猜小了");
+    } else if (guess > num3)
+    {
+        Console.WriteLine("猜大了");
+    } else
+    {
+        Console.WriteLine("对了");
+        win = true;
+    }
+} while (guess != num3 && guess_count < guess_limit);
+
+if (!win)
+{
+    Console.WriteLine("输了");
+}
