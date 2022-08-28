@@ -135,15 +135,16 @@ do
     num2++;
 }while (num2 <= 5);
 
-// 猜数字游戏（输入数字，直到猜中数字 限制猜测次数
- Console.WriteLine("请输入谜底：");
-int num3 = Convert.ToInt32(Console.ReadLine());
+// 猜数字游戏（猜中数字 限制猜测次数（do while版本
+/* int num3;
+Random rand = new Random();
+num3 = rand.Next(1, 200);
 int guess;
 int guess_count = 0;
-int guess_limit = 3;
+int guess_limit = 10;
 bool win = false;
 do
-{   
+{
     Console.WriteLine("请输入猜的数字：");
     guess = Convert.ToInt32(Console.ReadLine());
     guess_count++;
@@ -151,10 +152,12 @@ do
     if (guess < num3)
     {
         Console.WriteLine("猜小了");
-    } else if (guess > num3)
+    }
+    else if (guess > num3)
     {
         Console.WriteLine("猜大了");
-    } else
+    }
+    else
     {
         Console.WriteLine("对了");
         win = true;
@@ -164,4 +167,35 @@ do
 if (!win)
 {
     Console.WriteLine("输了");
+} */
+// 猜数字游戏（猜中数字 限制猜测次数（while版本
+/* int num3_2;
+Random rand_2 = new Random();
+num3_2 = rand_2.Next(1,200);
+int CountNum = 0;
+int guess_2;
+Console.WriteLine("请输入猜的数字：");
+guess_2 = Convert.ToInt32(Console.ReadLine());
+while (guess_2 != num3_2 && CountNum < 10) 
+{
+    if(guess_2 < num3_2)
+    {
+        Console.WriteLine("输入的数字小了");
+        guess_2 = Convert.ToInt32(Console.ReadLine());
+        CountNum++;
+    }
+    else
+    {
+        Console.WriteLine("输入的数字大了");
+        guess_2 = Convert.ToInt32(Console.ReadLine());
+        CountNum++;
+    }
 }
+if(CountNum >= 10)
+{
+    Console.WriteLine("失败");
+}
+else
+{
+    Console.WriteLine("胜利");
+} */
