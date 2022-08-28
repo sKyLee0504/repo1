@@ -19,12 +19,12 @@ Console.WriteLine("性别：" + sex);
 Console.WriteLine("年龄：" + age);
 Console.WriteLine("高度：" + height);
 Console.WriteLine("是否是男性：" + is_male);
-
+Console.WriteLine("------------------------------");
 // 字符串换行
 Console.WriteLine("名字：" + "\n" + name);
 Console.WriteLine("\"hello! {0}\"" + "\n" ,name);
 Console.WriteLine(name.Length);
-
+Console.WriteLine("------------------------------");
 // 字符串内全部大写的方法.ToUpper()
 Console.WriteLine(name.ToUpper());
 // 字符串内全部小写的方法.ToLower()
@@ -39,7 +39,7 @@ Console.WriteLine(name.IndexOf("ky"));
 Console.WriteLine(name.IndexOf("Sy"));
 // 字符串切割（第二个参数取几位
 Console.WriteLine(cent.Substring(1,5));
-
+Console.WriteLine("------------------------------");
 // 数字
 // 浮点数（其中一个是浮点，结果就是浮点
 Console.WriteLine(5 / 2.0);
@@ -58,19 +58,19 @@ Console.WriteLine(Math.Max(10, 36));
 Console.WriteLine(Math.Min(10,36));
 // 四舍五入
 Console.WriteLine(Math.Round(10.6));
-
+Console.WriteLine("------------------------------");
 // 用户输入 （只用write不换行
 //Console.Write("请输入名字：");
 //string str = Console.ReadLine();
 //Console.WriteLine("名字：{0}",str);
-
+Console.WriteLine("------------------------------");
 // 简易计算器 （ReadLine输入是string类型，要显式转换
 /*Console.WriteLine("请输入第一个数：");
 double num1 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("请输入第一个数：");
 double num2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("求和：{0}", num1 + num2);*/
-
+Console.WriteLine("------------------------------");
 // 数组（已知值
 int[] scores = { 50, 60, 70, 99, 100 };
 Console.WriteLine(scores[0]);
@@ -80,7 +80,7 @@ Console.WriteLine(scores[2]);
 string[] phone = new string[5];
 phone[0] = "sss";
 Console.WriteLine(phone[0]);
-
+Console.WriteLine("------------------------------");
 // if语句
 bool hungry = false;
 if (hungry)
@@ -91,7 +91,7 @@ else
 {
     Console.WriteLine("爬");
 }
-
+Console.WriteLine("------------------------------");
 // 进阶计算器
 /* Console.WriteLine("请输入第一个数：");
 double num1 = Convert.ToDouble(Console.ReadLine());
@@ -119,7 +119,7 @@ else
 {
     Console.Write("不合法");
 }*/
-
+Console.WriteLine("------------------------------");
 // while循环
 int num1 = 1;
 while (num1 <= 10)
@@ -134,7 +134,7 @@ do
     Console.WriteLine(num2);
     num2++;
 }while (num2 <= 5);
-
+Console.WriteLine("------------------------------");
 // 猜数字游戏（猜中数字 限制猜测次数（do while版本
 /* int num3;
 Random rand = new Random();
@@ -168,6 +168,7 @@ if (!win)
 {
     Console.WriteLine("输了");
 } */
+Console.WriteLine("------------------------------");
 // 猜数字游戏（猜中数字 限制猜测次数（while版本
 /* int num3_2;
 Random rand_2 = new Random();
@@ -199,3 +200,27 @@ else
 {
     Console.WriteLine("胜利");
 } */
+Console.WriteLine("------------------------------");
+//for循环
+int[] nums = { 10, 20, 30, 40, 50, 60 };
+for (int i = 0; i < nums.Length; i++)
+{
+    Console.WriteLine(i);
+    Console.WriteLine(nums[i]);
+}
+Console.WriteLine("------------------------------");
+//二维数组
+// row 横
+// column 竖
+int[,] nums2 = { 
+    { 1, 2, 3 }, 
+    { 4, 5, 6 }, 
+    { 7, 8, 9 } 
+};
+Console.WriteLine(nums2[1, 2]);
+// 新建二维数组
+int[,] nums3 = new int[3,5];
+nums3[0,0] = 1;
+Console.WriteLine(nums3[0, 0]);
+Console.WriteLine("------------------------------");
+// class、object
