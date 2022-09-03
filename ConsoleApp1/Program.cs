@@ -212,7 +212,7 @@ Console.WriteLine("------------------------------");
 //二维数组
 // row 横
 // column 竖
-int[,] nums2 = { 
+int[,] nums2 = {  
     { 1, 2, 3 }, 
     { 4, 5, 6 }, 
     { 7, 8, 9 } 
@@ -224,3 +224,19 @@ nums3[0,0] = 1;
 Console.WriteLine(nums3[0, 0]);
 Console.WriteLine("------------------------------");
 // class、object
+// 创建对象person1
+Person person1 = new Person();
+person1.height = 185.5;
+person1.name = "sky";
+person1.age = 24;
+System.Console.WriteLine(person1.name);
+System.Console.WriteLine(person1.height);
+System.Console.WriteLine(person1.age);
+// 创建对象person2
+Person person2 = new Person();
+person2.height = 170.0;
+person2.name = "fsy";
+person2.age = 24;
+System.Console.WriteLine(person2.name);
+System.Console.WriteLine(person2.height);
+System.Console.WriteLine(person2.age);
