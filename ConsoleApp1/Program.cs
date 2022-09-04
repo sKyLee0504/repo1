@@ -235,14 +235,18 @@ person1.age = 24;
 System.Console.WriteLine(person1.name);
 System.Console.WriteLine(person1.height);
 System.Console.WriteLine(person1.age);
+// 执行method方法
+person1.SayHi();
+Console.WriteLine(person1.IsAdult());
 // 创建对象person2
 Person person2 = new Person();
 person2.height = 170.0;
 person2.name = "fsy";
-person2.age = 24;
+person2.age = 16;
 System.Console.WriteLine(person2.name);
 System.Console.WriteLine(person2.height);
 System.Console.WriteLine(person2.age);
+Console.WriteLine(person2.IsAdult());
 Console.WriteLine("------------------------------");
 // namespace （存放class的空间） using 
 Zoo.Animal tiger = new Animal();
