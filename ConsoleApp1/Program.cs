@@ -1,4 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Zoo;
+using System;
+
 Console.WriteLine("Hello, World!");
 
 // 字符串 string " "
@@ -240,3 +243,12 @@ person2.age = 24;
 System.Console.WriteLine(person2.name);
 System.Console.WriteLine(person2.height);
 System.Console.WriteLine(person2.age);
+Console.WriteLine("------------------------------");
+// namespace （存放class的空间） using 
+Zoo.Animal tiger = new Animal();
+tiger.height = 3;
+tiger.weight = 2;
+tiger.type = "猫科";
+Console.WriteLine(tiger.height);
+Console.WriteLine(tiger.weight);
+Console.WriteLine(tiger.type);
