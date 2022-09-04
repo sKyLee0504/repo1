@@ -256,3 +256,4 @@ tiger.type = "猫科";
 Console.WriteLine(tiger.height);
 Console.WriteLine(tiger.weight);
 Console.WriteLine(tiger.type);
+Console.WriteLine(tiger.AddAnimalNum(10,20,"tiger"));
