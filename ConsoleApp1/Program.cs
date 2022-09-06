@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Zoo;
+using Industry;
 using System;
 
 // 没写class Program和main方法也没有关系，在系统编译的时候会自动生成包裹代码在其中
@@ -234,7 +235,7 @@ class Program
         Console.WriteLine("------------------------------");
         // class、object
         // 创建对象person1
-        Person person1 = new Person();
+        Person person1 = new Person("实例第一人");
         person1.height = 185.5;
         person1.name = "sky";
         person1.age = 24;
@@ -245,7 +246,7 @@ class Program
         person1.SayHi();
         Console.WriteLine(person1.IsAdult());
         // 创建对象person2
-        Person person2 = new Person();
+        Person person2 = new Person("实例第二人");
         person2.height = 170.0;
         person2.name = "fsy";
         person2.age = 16;
@@ -263,7 +264,24 @@ class Program
         Console.WriteLine(tiger.weight);
         Console.WriteLine(tiger.type);
         Console.WriteLine(tiger.AddAnimalNum(10, 20, "tiger"));
+        Console.WriteLine("------------------------------");
+        //构建函数 constructor （每实例化1次就要执行的方法
+        Car benz = new Car("benz", "Germany", 1, true);
+        Console.WriteLine(benz);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
-
-
 }

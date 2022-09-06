@@ -19,4 +19,8 @@ internal class Person
             return "未成年";
         }
     }
+        public Person (string name)
+    {
+        Console.WriteLine("创建成功{0}", name);
+    }
     }
