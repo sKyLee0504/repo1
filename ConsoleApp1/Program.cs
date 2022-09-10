@@ -3,6 +3,7 @@ using Zoo;
 using Industry;
 using System;
 using Entertainment;
+using Tools;
 
 // 没写class Program和main方法也没有关系，在系统编译的时候会自动生成包裹代码在其中
 // c#通过寻找main方法执行
@@ -282,7 +283,10 @@ class Program
         // static attribute 静态属性 属于类本身的属性
         Console.WriteLine(Video.video_count);
         Console.WriteLine(type2.getCount());
-
+        Console.WriteLine("------------------------------");
+        // static method 静态方法、static class 静态类
+        // 静态方法 用类名调用 
+        Tool.SayHi();
 
 
 
