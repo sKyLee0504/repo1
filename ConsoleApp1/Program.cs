@@ -278,7 +278,10 @@ class Program
         //type3.Type = "娱乐";
         Console.WriteLine(type2.Type);
         Console.WriteLine(type3.Type);
-
+        Console.WriteLine("------------------------------");
+        // static attribute 静态属性 属于类本身的属性
+        Console.WriteLine(Video.video_count);
+        Console.WriteLine(type2.getCount());
 
 
 
