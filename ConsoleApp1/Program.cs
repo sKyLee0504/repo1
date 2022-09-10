@@ -2,6 +2,7 @@
 using Zoo;
 using Industry;
 using System;
+using Entertainment;
 
 // 没写class Program和main方法也没有关系，在系统编译的时候会自动生成包裹代码在其中
 // c#通过寻找main方法执行
@@ -268,8 +269,15 @@ class Program
         //构建函数 constructor （每实例化1次就要执行的方法
         Car benz = new Car("benz", "Germany", 1, true);
         Console.WriteLine(benz);
-
-
+        Console.WriteLine("------------------------------");
+        // getter和setter方法
+        // 先创建3个影片实例
+        Video type1 = new Video("欢乐喜剧人", "韩红", "娱乐");
+        Video type2 = new Video("最长的电影", "周杰伦", "音乐");
+        Video type3 = new Video("隔墙有耳", "莎莎", "恐怖");
+        //type3.Type = "娱乐";
+        Console.WriteLine(type2.Type);
+        Console.WriteLine(type3.Type);
 
 
 
