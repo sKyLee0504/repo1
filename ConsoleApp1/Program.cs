@@ -4,6 +4,7 @@ using Industry;
 using System;
 using Entertainment;
 using Tools;
+using Human;
 
 // 没写class Program和main方法也没有关系，在系统编译的时候会自动生成包裹代码在其中
 // c#通过寻找main方法执行
@@ -287,6 +288,13 @@ class Program
         // static method 静态方法、static class 静态类
         // 静态方法 用类名调用 
         Tool.SayHi();
+        Console.WriteLine("------------------------------");
+        // inheritance 继承 name和age属性和打印方法继承于parent类
+        Student student1 = new Student("小白", 24, "清华大学");
+        student1.printName();
+        student1.printAge();
+        student1.printSchool(); 
+
 
 
 
